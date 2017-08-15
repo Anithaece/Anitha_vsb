@@ -1,11 +1,18 @@
 #include<stdio.h>
-#include<string.h>
 int main()
 {
-char a[100];
-printf("Enter the string %s");
-scanf("%s",&a);
-strrev(a);
-printf("Reversed string is %s",a);
+int n, rev= 0;
+ 
+   printf("Enter a number to reverse\n");
+   scanf("%d", &n);
+ 
+   while (n != 0)
+   {
+      rev=rev*10;
+      rev=rev+n%10;
+      n=n/10;
+   }
+ 
+   printf("Reverse of entered number is = %d\n", reverse);
 return 0;
 }
